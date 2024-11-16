@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 5px;
+    font-size: large;
+    list-style: none;
+    text-decoration: none;
+    outline-width: 5px;
+}
+.peacefull{
+    background-image: url("./src/honeybluebackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    section.horror{display: none;}
+    section.peace{
+        display: flex;
+        outline-color: pink;
+        background-color: gray;
+        img{
+            outline-style: groove;
+            outline-color: gold;
+            width: 90%;
+            margin: 5px;
+            background-color: pink;
+        }
+        *{
+            color: pink;
+            font-family: "Lobster", sans-serif;
+        }
+        a{
+            padding: 0;
+            color: orchid;
+        }
+        a:hover{color: palevioletred;}
+        header{
+            font-size: larger;
+            width: 80%;
+            margin: 5%;
+            div{
+                background-color: pink;
+                outline-style: groove;
+                outline-color: gold;
+                h1{
+                    color: crimson;
+                    box-sizing: border-box;
+                }
+            }
+            ul{margin: 5%;}
+        }
+        header::after{
+            content: url("./src/fireFlower.png");
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .changer{
+            color: darkred;
+            padding: 0;
+            box-sizing: border-box;
+            background: none;
+            outline-style: none;
+        }
+        .changer:hover{color: red;}
+        .column h1::before{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            content: url("./src/yellowFlower.png");
+        }
+        p::after{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            content: url("./src/blueFlower.png");
+        }
+        h5::after{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            content: url("./src/indigoFlower.png");
+            padding-top: 5px;
+        }
+    }
+}
+.horrific{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    section.peace{display: none;}
+    section.horror{
+        display: flex;
+        outline-color: red;
+        background-image: url("./src/nightBrown.png");
+        img{
+            outline-style: groove;
+            outline-color: red;
+            width: 100%;
+        }
+        *{
+            color: #ffffff;
+            font-family: "Rubik Wet Paint", system-ui;
+        }
+        a{
+            padding: 0;
+            color: darkred;
+        }
+        a:hover{color: red;}
+        header{
+            font-size: larger;
+            width: 80%;
+            margin: 5%;
+            div{
+                background-color: red;
+                outline-style: groove;
+                outline-color: #ffffff;
+                h1{
+                    box-sizing: border-box;
+                    color: #ffffff;
+                }
+            }
+            ul{margin: 5%;}
+        }
+        .changer{
+            color: pink;
+            padding: 0;
+            box-sizing: border-box;
+            background: none;
+            outline-style: none;
+        }
+        .changer:hover{color: gold;}
+    }
+}
+section{
+    flex-direction: column;
+    justify-content: space-around;
+    justify-self: center;
+    margin: 5%;
+    width: 90%;
+    outline-style: groove;
+  }
+p{
+    box-sizing: border-box;
+    width: 81%;
+    margin-bottom: 10%;
+  }
+.row, .column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+.row{flex-direction: row;}
+.column{
+    flex-direction: column;
+    width: 75%;
+  }
+  @media screen and (max-width: 500px) {
+    section{
+        margin: 0;
+        width: 105%;
+      }
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+.column{width: 100%;}
+  }
